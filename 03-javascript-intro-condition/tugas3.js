@@ -1,4 +1,4 @@
-// Soal 1 (Latihan membuat variable dan valuenya)
+// Soal 1 ( Latihan membuat variable dan valuenya )
 let namalengkap = "I Kadek Wahyu Nanda Aristya";
 console.log(namalengkap);
 
@@ -49,7 +49,7 @@ console.log('Kata Ke-lima: ' + fifthWords);
 
 
 
-//Soal 6 (Akses karakter dalam string)
+//Soal 6 ( Akses karakter dalam string )
 var sentence = "I am going to be React JS Developer";
 
 var exampleFirstWord = sentence[0] ;
@@ -101,7 +101,7 @@ else{
 
 
 
-//Soal 9 ( conditional tipe tenary operator
+//Soal 9 ( conditional tipe tenary operator )
 let angka = 2
 
 {/*
