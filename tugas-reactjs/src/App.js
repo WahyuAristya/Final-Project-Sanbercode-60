@@ -1,18 +1,14 @@
-import './App.css';
+import React from 'react';
+import Tugas6 from './tugas6/tugas6';
+import Tugas7 from './tugas7/tugas7';
 
 function App() {
   return (
-    <div>
-      <header className='App'>
-        <div className="App-header">
-          <h1>Hi, Saya Wahyu Aristya</h1>
-        </div>
-        <div>
-          <p>Saya dari batch 60 berhasil menginstal React</p>
-        </div>
-      </header>
-    </div>
-  );
+    <>
+      <Tugas6 />
+      <Tugas7 name="Wahyu Aristya" batch="60" email="wahyuaristya08@gmail.com"/>
+    </>
+  )
 }
 
 export default App;
