@@ -27,7 +27,7 @@ const Tugas8 = () => {
         <div>
           <p className="paragraph">{count}</p>
         </div>
-        <button onClick={enableButton} disabled={isButtonDisabled}>
+        <button onClick={enableButton} disabled={isButtonDisabled} style={{ border : "1px solid gray", borderRadius : "5px" }}>
           Tambah
         </button>
         {count >= 10 ? (
