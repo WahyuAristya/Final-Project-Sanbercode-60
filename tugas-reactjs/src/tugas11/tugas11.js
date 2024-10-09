@@ -73,7 +73,7 @@ function Tugas11() {
 
         let {name, course, score} = input;
 
-        setErrorMessage({ name: "", course: "" });
+        setErrorMessage({ name: "", course: "", score: "" });
         let isValid = true;
         if(name.trim() === "") {
             setErrorMessage(prevState => ({
@@ -87,7 +87,7 @@ function Tugas11() {
                 course: "Course tidak boleh kosong"
             }))
             isValid = false;
-        } if(score < 0 || score > 100) {
+        } if(score === "" || score < 0 || score > 100) {
             setErrorMessage(prevState => ({
                 ...prevState,
                 score: "Nilai harus antara 0 - 100"
