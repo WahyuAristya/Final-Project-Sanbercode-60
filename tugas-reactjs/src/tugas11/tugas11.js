@@ -15,6 +15,7 @@ function Tugas11() {
     const [errorMessage, setErrorMessage] = useState({
         name : "",
         course : "",
+        score : ""
     });
 
 
@@ -84,6 +85,12 @@ function Tugas11() {
             setErrorMessage(prevState => ({
                 ...prevState,
                 course: "Course tidak boleh kosong"
+            }))
+            isValid = false;
+        } if(score < 0 || score > 100) {
+            setErrorMessage(prevState => ({
+                ...prevState,
+                score: "Nilai harus antara 0 - 100"
             }))
             isValid = false;
         }
@@ -176,6 +183,7 @@ function Tugas11() {
                 <label className="block mb-3">
                     <span className="text-black font-medium">Nilai :</span>
                     <input onChange={handleForm} value={input.score} type="number" name="score" className="mt-2 block w-full rounded-md bg-gray-100 border-gray-200 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+                    {errorMessage.score && <p className="text-red-500 text-sm mt-1">{errorMessage.score}</p>}
                 </label>
                 <button className="bg-blue-600 border border-gray-300 text-white py-2 px-2 rounded-[5px] w-[7%] font-medium mt-5 mb-3 hover:bg-blue-800">Submit</button>
             </form>
