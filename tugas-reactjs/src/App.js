@@ -5,16 +5,23 @@ import Tugas8 from './tugas8/tugas8';
 import Tugas9 from './tugas9/tugas9';
 import Tugas10 from './tugas10/tugas10';
 import Tugas11 from './tugas11/tugas11';
+import Nav from './nav';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      {/* <Tugas6 />
-      <Tugas7 name="Wahyu Aristya" batch="60" email="wahyuaristya08@gmail.com"/>
-      <Tugas8 />
-      <Tugas9 /> */}
-      {/* <Tugas10 /> */}
-      <Tugas11 />
+    <BrowserRouter>
+    <Nav />
+      <Routes>
+        <Route path="/" element={<Tugas6 />} />
+        <Route path="/tugas7" element={<Tugas7 name="Wahyu Aristya" email="wahyuaristya08@gmail.com" batch="60" />} />
+        <Route path="/tugas8" element={<Tugas8 />} />
+        <Route path="/tugas9" element={<Tugas9 />} />
+        <Route path="/tugas10" element={<Tugas10 />} />
+        <Route path="/tugas11" element={<Tugas11 />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
