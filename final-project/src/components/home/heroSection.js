@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="mx-[80px] max-w-[740px]">
         <h1 className="font-sans font-bold text-[48px] text-whiteSecondary leading-[130%]">Temukan Pekerjaan Impianmu Bersama <span className="font-sans font-bold text-[48px] text-primary">KerjaYuk</span></h1> 
         <p className="font-sans font-light text-[18px] text-whiteSecondary leading-[150%] mt-[20px] mb-[40px]">Jelajahi ribuan lowongan pekerjaan dari berbagai industri, dan ambil langkah pertama menuju masa depan cerahmu. Temukan dan mulai karir impianmu sekarang !</p>
-        <Button variant="primary" size="lg">Mulai Karirmu</Button>
+        <Button variant="primary" size="lg" onClick={() => window.location.href = "/lowongan"}>Mulai Karirmu</Button>
       </div>
     </section>
   );
